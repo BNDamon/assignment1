@@ -164,13 +164,15 @@ class Postfix{
             if (c >= '0' && c <= '9') { 
                 s.push(c - '0');
             } else {
-                int val2 = s.pop();
-                int val1 = s.pop();
+                int z = s.pop();
+                int y = s.pop();
                 
-                if (c == '+') s.push(val1 + val2);
-                else if (c == '-') s.push(val1 - val2);
-                else if (c == '*') s.push(val1 * val2);
-                else if (c == '/') s.push(val1 / val2);
+                if (c == '+') {
+                    s.push(y + z);
+                }
+                else if (c == '-') s.push(y - z);
+                else if (c == '*') s.push(y * z);
+                else if (c == '/') s.push(y / z);
             }
         }
         return s.pop();

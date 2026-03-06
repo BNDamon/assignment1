@@ -1,0 +1,10 @@
+Jim
+jill
+JOHN
+delete jill
+Bob
+Jack
+delete jim
+Alice
+Zack
+delete zack
